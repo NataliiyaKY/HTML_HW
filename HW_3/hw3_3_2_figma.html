@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .flex-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-family: Inter;
+            font-size: 45px;
+            font-style: normal;
+            line-height: normal;
+        }
+
+        /*-------------------------------------------HEAD---------------------------------------------------*/
+        header {
+            height: 22vh;
+            background: #8D8484;
+
+        }
+
+        /*------------------------------------------MAIN----------------------------------------------------*/
+        main {
+            height: 56vh;
+            color: #FFF;
+        }
+
+        .left {
+            width: 73vw;
+            height: 56vh;
+        }
+
+        .right {
+            width: 27vw;
+            height: 56vh;
+        }
+
+        .CO1 {
+            width: 73vw;
+            height: 19vh;
+            background: #776969;
+        }
+
+        .CO2 {
+            width: 73vw;
+            height: 19vh;
+            background: #643030;
+        }
+
+        .CO3 {
+            width: 73vw;
+            height: 19vh;
+            background: #441818;
+        }
+
+        .S1 {
+            width: 27vw;
+            height: 28vh;
+            background: #937575;
+        }
+
+        .S2 {
+            width: 27vw;
+            height: 28vh;
+            background: #644C4C;
+        }
+
+        /*-------------------------------------------FOOTER--------------------------------------------------*/
+        footer {
+            height: 22vh;
+            background: #BDBDBD;
+        }
+    </style>
+</head>
+<body>
+<header class="flex-row"><p>Header</p></header>
+<main class="flex-row">
+    <section class="flex-column left">
+        <nav class="flex-row CO1"><p>Content-1</p></nav>
+        <nav class="flex-row CO2"><p>Content-2</p></nav>
+        <nav class="flex-row CO3"><p>Content-3</p></nav>
+    </section>
+    <section class="flex-column right">
+        <nav class="flex-row S1"><p>spam-1</p></nav>
+        <nav class="flex-row S2"><p>spam-1</p></nav>
+    </section>
+</main>
+<footer class="flex-row"><p>footer</p></footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .flex-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-family: Inter;
+            font-size: 45px;
+            font-style: normal;
+            line-height: normal;
+        }
+
+        /*  ------------------------------------------HEAD-------------------------------------------------------*/
+        header {
+            height: 20vh;
+            background: #9B6F6F;
+            color: #FFF;
+        }
+
+        /*  --------------------------------------------MAIN------------------------------------------------------*/
+        main {
+            height: 60vh;
+        }
+
+        .left {
+            height: 60vh;
+            width: 34vw;
+        }
+
+        .N1 {
+            height: 20vh;
+            width: 34vw;
+            background: #D9D9D9;
+        }
+
+        .N2 {
+            height: 20vh;
+            width: 34vw;
+            background: #AA9898;
+        }
+
+        .N3 {
+            height: 20vh;
+            width: 34vw;
+            background: #C5BBBB;
+        }
+
+        .middle {
+            height: 60vh;
+            width: 33vw;
+            background: #8A8484;
+        }
+
+        .right {
+            height: 60vh;
+            width: 33vw;
+            background: #C0B3B3;
+        }
+
+        /*  ---------------------------------------------FOOTER----------------------------------------------------*/
+        footer {
+            height: 20vh;
+            background: #524B4B;
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+<header class="flex-row"><p>Header</p></header>
+<main class="flex-row">
+    <section class="flex-column left">
+        <nav class="flex-row N1"><p>News-1</p></nav>
+        <nav class="flex-row N2"><p>News-2</p></nav>
+        <nav class="flex-row N3"><p>News-3</p></nav>
+    </section>
+    <section class="flex-row middle"><p>Content-1</p></section>
+    <section class="flex-row right"><p>Content-2</p></section>
+</main>
+<footer class="flex-row"><p>Footer</p></footer>
+</body>
+</html>
