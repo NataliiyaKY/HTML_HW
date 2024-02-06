@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-family: "Inter";
+            font-size: 45px;
+        }
+
+        /*---------------------------------------HEAD-----------------------------------------------*/
+        header {
+            height: 22vh;
+            background: #D9D9D9;
+        }
+
+        /*---------------------------------------MAIN-----------------------------------------------*/
+        main {
+            height: 56vh;
+        }
+
+        .left {
+            height: 56vh;
+            width: 19vw;
+            background: #817C7C;
+        }
+
+        .middle {
+            height: 56vh;
+            width: 62vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .middle-top {
+            height: 50vh;
+            width: 62vw;
+            background: #ABA8A8;
+        }
+
+        .middle-bottom {
+            height: 50vh;
+            width: 62vw;
+            background: #878484;
+        }
+
+        .right {
+            height: 56vh;
+            width: 19vw;
+            background: #B7AEAE;
+        }
+
+        /*---------------------------------------FOOTER-----------------------------------------------*/
+        footer {
+            height: 22vh;
+            background: #BDBDBD;
+        }
+    </style>
+</head>
+<body>
+<header class="flex">
+    <p>Header</p>
+</header>
+<main class="flex">
+    <section class="flex left"><p>News-1</p></section>
+    <section class="middle">
+        <section class="flex middle-top"><p>Content-1</p></section>
+        <section class="flex middle-bottom"><p>Content-2</p></section>
+    </section>
+    <section class="flex right"><p>Sponsor</p></section>
+</main>
+<footer class="flex"><p>Footer</p></footer>
+
+</body>
+</html>
